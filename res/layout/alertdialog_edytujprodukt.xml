@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:id="@+id/editText_dialog_edytuj_produkt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""/>
+
+    <RelativeLayout
+        android:focusable="true" 
+    	android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_dialog_edytuj_produkt"
+        android:layout_centerHorizontal="true" >
+        <requestFocus />
+        
+
+        <NumberPicker
+            android:id="@+id/numberPicker1_dialog_edytuj_produkt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:imeOptions="actionNext">
+            </NumberPicker>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/numberPicker1_dialog_edytuj_produkt"
+            android:text="zł"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+
+        <NumberPicker
+            android:id="@+id/numberPicker2_dialog_edytuj_produkt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/numberPicker2_dialog_edytuj_produkt"
+            android:text="gr"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</RelativeLayout>

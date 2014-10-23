@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+  <RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1" >
+
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentTop="true"
+          android:text="Filtry:"
+          android:textSize="32sp" />
+
+      <RelativeLayout
+          android:id="@+id/RLDostawca"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/textView1" >
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:text="Dostawca: "
+              android:textSize="20sp" />
+
+          <Spinner
+              android:id="@+id/spinner1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="20dp"
+              android:layout_toRightOf="@+id/textView2" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/relativeLayout1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/RLDostawca" >
+
+          <TextView
+              android:layout_marginTop="40dp"
+              android:textSize="20sp"
+              android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:text="Data:" />
+
+          <RelativeLayout
+              android:id="@+id/RL2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/textView3">
+	              <TextView
+	              android:textSize="20sp"
+	              android:id="@+id/textView_OD"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_alignParentLeft="true"
+	              android:layout_centerVertical="true"
+	              android:text="od: 12-12-2013" />
+
+	              
+          </RelativeLayout>
+          <RelativeLayout
+              android:id="@+id/RL3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/RL2">
+	              <TextView
+	              android:textSize="20sp"
+	              android:id="@+id/textView_DO"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_alignParentLeft="true"
+	              android:layout_centerVertical="true"
+	              android:text="do: 14-01-2014" />
+
+	             
+	              
+          </RelativeLayout>
+          
+
+      </RelativeLayout>
+      
+  </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.618"
+        android:layout_height="match_parent" >
+
+        <ExpandableListView
+            android:groupIndicator="@null"
+            android:id="@+id/expandableListView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+        </ExpandableListView>
+
+    </RelativeLayout>
+
+</LinearLayout>
